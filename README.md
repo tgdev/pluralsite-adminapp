@@ -15,3 +15,11 @@ This is the codebase for Plural site's [Building Applications with React and Red
 ### Webpack
 
 ### Testing
+
+
+## Scripts
+
+All automated build scripts are defined in the package.json file.
+
+`Test`:
+`Start`:
