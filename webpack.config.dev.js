@@ -26,7 +26,7 @@ export default {
   module: {
     loaders: [
       { test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel'] },
-      { test: /\.css$/, loaders: ['style', 'css'] }
+      { test: /\.css$/, loaders: ['style', 'css'] },
       { test: /\.woff(2)$/, loader: 'url?prefix=font/&limit=5000' },
       { test: /\.ttf$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
     ]
