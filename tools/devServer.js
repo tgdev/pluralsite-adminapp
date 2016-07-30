@@ -3,8 +3,9 @@
 import express from 'express';
 import webpack from 'webpack';
 import path from 'path';
+import colors from 'colors';
 import config from '../webpack.config.dev';
-import open from 'open';
+// import open from 'open';
 
 const port = 3000;
 const app = express();
@@ -25,6 +26,7 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open(`http://localhost:${port}`);
+    // open(`http://localhost:${port}`);
+    console.log(`Dev server running at http://localhost:${port}`.cyan);
   }
 });
