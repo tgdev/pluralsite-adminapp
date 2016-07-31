@@ -12,5 +12,9 @@ a.active {
 }
 
 nav {
-  padding-top: 20px;
+  padding-top: 28px;
+}
+
+.navbar-brand {
+  height: auto;
 }

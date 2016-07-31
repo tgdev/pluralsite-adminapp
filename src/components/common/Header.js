@@ -1,13 +1,17 @@
 import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
+import { IndexLink } from 'react-router';
+import Menu from './Menu';
 
 const Header = () => {
   return (
-    <nav>
-      <IndexLink to="/" activeClassName="active">Home</IndexLink>
-      {" | "}
-      <Link to="/about" activeClassName="active">About</Link>
-    </nav>
+    <header className="header navbar navbar-inverse">
+      <div className="navbar-header">
+        <IndexLink to="/" className="navbar-brand" activeClassName="active">
+          <img src="http://placehold.it/100x40/" alt="Logo" />
+        </IndexLink>
+      </div>
+      <Menu />
+    </header>
   );
 };
 
