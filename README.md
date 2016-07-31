@@ -25,33 +25,37 @@ Presentational (Dumb) components:
 
 ### Redux - http://redux.js.org/
 
-Actions:
-- Trigger changes to Store via Reducers
-- Description of an event
-- Sent (Emitted) by components
+**Actions:**
+- What it is: Simple object that is a description of an event
+- What it does: Trigger changes to Store via Reducers
+- How it does it: Sent (Emitted) by components
 - Accepts type (required) and data
 
-Store:
-- Listens for actions from Reducers
-- Updates component when Store changes
-- Single data tree of application state
+**Store:**
+- What it is: Single data tree of application state
+- What it does: Updates relevant components when state changes
+- How it does it: Listens for actions from Reducers
 - Accepts main Reducer
 
-Reducers:
-- Pure functions that change state
-- Handles Actions
+**Reducers:**
+- What it is: Pure functions
+- What it does: Changes state
+- How it does it: Handles Actions emitted by components and updates Store
 - Accepts current state
-- Returns new state
-- Updates store
-
+- Returns new state or current state if no action match
 
 ### Immutable JS - https://facebook.github.io/immutable-js/
+Enforce state immutability within the app.
+To update state, return new object.
 
 ### Webpack - https://webpack.github.io/
 Webpack is used as an efficient and easy to manage asset bundler for javascript, fonts and styles.
 
 ### Testing
 
+**Mocha**
+
+**Chai**
 
 ## Styles
 This project uses [Twitter Bootstrap](http://getbootstrap.com) with some custom styles that can be found in `src/styles/styles.css`.
