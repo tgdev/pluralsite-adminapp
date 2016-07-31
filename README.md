@@ -8,7 +8,29 @@ This is the codebase for Plural site's [Building Applications with React and Red
 
 ### React
 
+Container (smart) components:
+- Top level components
+- Mutate state
+- Use refs
+- Pass data (props) & actions down to child components
+- Interact with Redux Store
+- Uses React's Lifecycle methods
+- Little/No markup
+
+Presentational (Dumb) components:
+- Child components
+- No logic
+- Receives data (props) & actions from parent component
+- Unaware of Redux Store
+- Mostly markup
+
 ### Redux
+
+Store:
+
+Reducers:
+
+Actions:
 
 ### Immutable JS
 
