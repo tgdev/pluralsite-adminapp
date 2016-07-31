@@ -5,7 +5,7 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <p>Site Header</p>
-        {this.props.children} // passed from React Router
+        {this.props.children}
       </div>
     );
   }
