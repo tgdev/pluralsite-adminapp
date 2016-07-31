@@ -5,8 +5,7 @@ This is the codebase for Plural site's [Building Applications with React and Red
 
 ## Architecture
 
-
-### React
+### React - https://facebook.github.io/react/
 
 Container (smart) components:
 - Top level components
@@ -24,25 +23,42 @@ Presentational (Dumb) components:
 - Unaware of Redux Store
 - Mostly markup
 
-### Redux
-
-Store:
-
-Reducers:
+### Redux - http://redux.js.org/
 
 Actions:
+- Trigger changes to Store via Reducers
+- Description of an event
+- Sent (Emitted) by components
+- Accepts type (required) and data
 
-### Immutable JS
+Store:
+- Listens for actions from Reducers
+- Updates component when Store changes
+- Single data tree of application state
+- Accepts main Reducer
 
-### Webpack
+Reducers:
+- Pure functions that change state
+- Handles Actions
+- Accepts current state
+- Returns new state
+- Updates store
+
+
+### Immutable JS - https://facebook.github.io/immutable-js/
+
+### Webpack - https://webpack.github.io/
+Webpack is used as an efficient and easy to manage asset bundler for javascript, fonts and styles.
 
 ### Testing
 
 
-## Scripts
+## Styles
+This project uses [Twitter Bootstrap](http://getbootstrap.com) with some custom styles that can be found in `src/styles/styles.css`.
 
-All automated build scripts are defined in the package.json file.
+
+## Scripts
+All automated build scripts are defined in the `package.json` file.
 
 `Start`:
-
 `Test`:
